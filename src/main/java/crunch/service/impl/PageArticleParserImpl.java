@@ -39,9 +39,40 @@ public class PageArticleParserImpl implements PageArticleParser {
                     company = knownCompanies.lookup(companyName);
                 } else {
                     company = new Company(companyName, null);
+
                 }
             } else {
+                // TODO: Look for a cheaper way of determining company
                 company = knownCompanies.defaultCompany();
+                String[] words = content.split("[\\s+]");
+                for (int i = 0; i < words.length; i++) {
+                    // One-word names
+                    if (knownCompanies.includes(words[i])) {
+                        company = knownCompanies.lookup(words[i]);
+                        break;
+                    }
+                    // Two-word names
+                    if (i < words.length - 2) {
+                        if (knownCompanies.includes(words[i] + " " + words[i+1])) {
+                            company = knownCompanies.lookup(words[i] + " " + words[i+1]);
+                            break;
+                        }
+                    }
+                    // Three-word names
+                    if (i < words.length - 3) {
+                        if (knownCompanies.includes(words[i] + " " + words[i+1] + " " + words[i+2])) {
+                            company = knownCompanies.lookup(words[i] + " " + words[i+1] + " " + words[i+2]);
+                            break;
+                        }
+                    }
+                    // Four-word names
+                    if (i < words.length - 4) {
+                        if (knownCompanies.includes(words[i] + " " + words[i+1] + " " + words[i+2] + " " + words[i+3])) {
+                            company = knownCompanies.lookup(words[i] + " " + words[i+1] + " " + words[i+2] + " " + words[i+3]);
+                            break;
+                        }
+                    }
+                }
             }
             if (articleRef != null && articleTitle != null) {
                 try {
