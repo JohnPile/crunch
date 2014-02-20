@@ -28,7 +28,7 @@ public class CsvGeneratorTester {
         Article article=new Article("title", url);
         companyArticles.add(new CompanyArticle(company, article));
         CsvGenerator.toCsv(companyArticles, ps);
-        assertEquals("\"example company\",\"example.com\",\"title\",\"http://example.com\"" + SEP, baos.toString(CHARSET));
+        assertEquals("\"title\",\"http://example.com\",\"example company\",\"example.com\"" + SEP, baos.toString(CHARSET));
     }
 
     @Test
