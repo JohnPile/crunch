@@ -12,8 +12,8 @@ import java.util.Set;
 
 public class PageScannerImpl implements PageScanner {
 
-    private JSoupConnection jSoupConnection;
-    private PageArticleParser pageArticleParser;
+    private final JSoupConnection jSoupConnection;
+    private final PageArticleParser pageArticleParser;
 
     @Inject
     public PageScannerImpl(JSoupConnection jSoupConnection, PageArticleParser pageArticleParser) {

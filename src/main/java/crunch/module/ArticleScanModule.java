@@ -1,6 +1,7 @@
 package crunch.module;
 
 import com.google.inject.AbstractModule;
+import crunch.model.IgnoredWords;
 import crunch.service.JSoupConnection;
 import crunch.service.KnownCompanies;
 import crunch.service.PageArticleParser;
@@ -18,5 +19,6 @@ public class ArticleScanModule extends AbstractModule {
         bind(KnownCompanies.class).to(KnownCompaniesImpl.class);
         bind(JSoupConnection.class).to(JSoupConnectionImpl.class);
         bind(PageArticleParser.class).to(PageArticleParserImpl.class);
+        bind(IgnoredWords.class).toProvider(IgnoredWordsProvider.class);
     }
 }

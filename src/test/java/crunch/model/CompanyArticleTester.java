@@ -5,15 +5,15 @@ import static org.junit.Assert.fail;
 
 public class CompanyArticleTester {
 
-    public void testConstructorGoodData() throws Exception {
+    public void testConstructorGoodData() {
         Company company=new Company("Example Corp", "example.com");
         Article article=new Article("random title", null);
         CompanyArticle companyArticle=new CompanyArticle(company, article);
         assertEquals(company, companyArticle.getCompany());
-        assertEquals(article, companyArticle.getCompany());
+        assertEquals(article, companyArticle.getArticle());
     }
 
-    public void testConstructorInvalidData() throws Exception {
+    public void testConstructorInvalidData() {
         Company company=new Company("Company", "example.com");
         Article article=new Article("random", null);
         try {

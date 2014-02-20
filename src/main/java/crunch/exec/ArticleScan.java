@@ -9,10 +9,10 @@ import crunch.service.impl.PageRunner;
 
 public class ArticleScan {
 
-    private PageScanner pageScanner;
+    private final PageScanner pageScanner;
 
     @Inject
-    public ArticleScan(PageScanner pageScanner) {
+    private ArticleScan(PageScanner pageScanner) {
         this.pageScanner = pageScanner;
     }
 

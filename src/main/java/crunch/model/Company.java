@@ -1,10 +1,11 @@
 package crunch.model;
 
 import com.google.common.base.Objects;
+import com.sun.istack.internal.NotNull;
 
 public class Company implements Comparable<Company> {
-    String name;
-    String website;
+    private final String name;
+    private final String website;
 
     /**
      * Company metadata
@@ -24,7 +25,7 @@ public class Company implements Comparable<Company> {
         return website;
     }
 
-    public int compareTo(Company that) {
+    public int compareTo(@NotNull Company that) {
         int primary=name.compareTo(that.name);
         return primary==0 ? website.compareTo(that.website) : primary;
     }

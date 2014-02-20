@@ -10,11 +10,11 @@ import java.util.Map;
 public class KnownCompaniesImpl implements KnownCompanies {
 
     private static final Company UNRECOGNIZED_COMPANY=new Company(null, null);
-    private Map<String,Company> companyCache=new HashMap<String,Company>();
+    private final Map<String,Company> companyCache=new HashMap<String,Company>();
 
     public KnownCompaniesImpl() {
         //TODO: Wire up to some persistent storage
-        //TODO: Fill with http://www.crunchbase.com/company/{companyname} or Factual.com data
+        //TODO: Fill with http://www.crunchbase.com/company/{companyName} or Factual.com data
     }
 
     @Override

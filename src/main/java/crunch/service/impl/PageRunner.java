@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 public class PageRunner {
 
     private static final Object printLock=new Object();
-    private PageScanner pageScanner;
+    private final PageScanner pageScanner;
 
     public PageRunner(PageScanner pageScanner) {
         this.pageScanner=pageScanner;
@@ -18,7 +18,7 @@ public class PageRunner {
 
     /**
      * Scan a fixed number of pages from the site using a pool of workers
-     * @param pages
+     * @param pages Number of pages to process before quitting
      * @throws InterruptedException
      */
     public void runPool(int pages) throws InterruptedException {
@@ -44,7 +44,7 @@ public class PageRunner {
      */
     private class PageManager {
         private int currentPage;
-        private int lastPage;
+        private final int lastPage;
 
         public PageManager(int firstPage, int lastPage) {
             currentPage=firstPage;
@@ -64,9 +64,9 @@ public class PageRunner {
      */
     private class WorkerThread implements Runnable {
 
-        private PageScanner pageScanner;
-        private PageManager pageManager;
-        private PrintStream out;
+        private final PageScanner pageScanner;
+        private final PageManager pageManager;
+        private final PrintStream out;
 
 
         public WorkerThread(PageScanner pageScanner, PageManager pageManager, PrintStream out){

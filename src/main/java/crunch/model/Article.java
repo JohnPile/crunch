@@ -1,13 +1,14 @@
 package crunch.model;
 
 import com.google.common.base.Preconditions;
+import com.sun.istack.internal.NotNull;
 
 import java.net.URL;
 
 public class Article implements Comparable<Article> {
 
-    private String title;
-    private URL url;
+    private final String title;
+    private final URL url;
 
     /**
      * Article metadata
@@ -29,7 +30,7 @@ public class Article implements Comparable<Article> {
         return url;
     }
 
-    public int compareTo(Article that) {
+    public int compareTo(@NotNull Article that) {
         int primary=title.compareTo(that.title);
         return primary==0 ? url.toString().compareTo(that.url.toString()) : primary;
     }

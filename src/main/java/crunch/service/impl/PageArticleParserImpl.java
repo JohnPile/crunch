@@ -3,6 +3,7 @@ package crunch.service.impl;
 import crunch.model.Article;
 import crunch.model.Company;
 import crunch.model.CompanyArticle;
+import crunch.model.Interpretation;
 import crunch.service.KnownCompanies;
 import crunch.service.PageArticleParser;
 import org.jsoup.nodes.Document;
@@ -17,11 +18,13 @@ import java.util.Set;
 
 public class PageArticleParserImpl implements PageArticleParser {
 
-    private KnownCompanies knownCompanies;
+    private final KnownCompanies knownCompanies;
+    private final CompanyInterpreter companyInterpreter;
 
     @Inject
-    public PageArticleParserImpl(KnownCompanies knownCompanies) {
+    public PageArticleParserImpl(KnownCompanies knownCompanies, CompanyInterpreter companyInterpreter) {
         this.knownCompanies = knownCompanies;
+        this.companyInterpreter = companyInterpreter;
     }
 
     public Set<CompanyArticle> parseArticles(Document document) {
@@ -31,28 +34,28 @@ public class PageArticleParserImpl implements PageArticleParser {
             String articleRef = articleBlock.attr("data-permalink");
             String articleTitle = articleBlock.attr("data-shareTitle");
             String content = articleBlock.select("p.excerpt").text();
-            Company company;
+            Interpretation interpretation = companyInterpreter.interpretCompany(articleBlock);
+            String companyName=(interpretation==null) ? "n/a" : interpretation.getName();
+            Company company=new Company(companyName,null);
             if (content.matches("^Company: [^:]+ Location:.*")) {
-                String companyName = content.substring(9, content.indexOf(':', 9) - 9);
+                companyName = content.substring(9, content.indexOf(':', 9) - 9);
                 // TODO: Still need to determine domain name.  Maybe from Factual?
                 if (knownCompanies.includes(companyName)) {
                     company = knownCompanies.lookup(companyName);
-                } else {
-                    company = new Company(companyName, null);
-
                 }
             } else {
                 // TODO: Look for a cheaper way of determining company
-                company = knownCompanies.defaultCompany();
                 String[] words = content.split("[\\s+]");
                 for (int i = 0; i < words.length; i++) {
                     // One-word names
+                    if (words[i].length()==0 || Character.isLowerCase(words[i].charAt(0))) continue;
                     if (knownCompanies.includes(words[i])) {
                         company = knownCompanies.lookup(words[i]);
                         break;
                     }
                     // Two-word names
                     if (i < words.length - 2) {
+                        if (words[i+1].length()==0 || Character.isLowerCase(words[i+1].charAt(0))) continue;
                         if (knownCompanies.includes(words[i] + " " + words[i+1])) {
                             company = knownCompanies.lookup(words[i] + " " + words[i+1]);
                             break;
@@ -60,6 +63,7 @@ public class PageArticleParserImpl implements PageArticleParser {
                     }
                     // Three-word names
                     if (i < words.length - 3) {
+                        if (words[i+2].length()==0 || Character.isLowerCase(words[i+2].charAt(0))) continue;
                         if (knownCompanies.includes(words[i] + " " + words[i+1] + " " + words[i+2])) {
                             company = knownCompanies.lookup(words[i] + " " + words[i+1] + " " + words[i+2]);
                             break;
@@ -67,6 +71,7 @@ public class PageArticleParserImpl implements PageArticleParser {
                     }
                     // Four-word names
                     if (i < words.length - 4) {
+                        if (words[i+3].length()==0 || Character.isLowerCase(words[i+3].charAt(0))) continue;
                         if (knownCompanies.includes(words[i] + " " + words[i+1] + " " + words[i+2] + " " + words[i+3])) {
                             company = knownCompanies.lookup(words[i] + " " + words[i+1] + " " + words[i+2] + " " + words[i+3]);
                             break;
