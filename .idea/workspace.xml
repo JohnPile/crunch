@@ -56,7 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java" line="40" class="crunch.service.impl.PageArticleParserImpl" package="crunch.service.impl">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java" line="0" class="PageArticleParserImpl.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -81,10 +81,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CompanyInterpreterTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/CompanyInterpreterTester.java">
+      <file leaf-file-name="PageRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="816">
+            <state line="78" column="27" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.0" vertical-offset="659" max-vertical-offset="1683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageScannerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageScannerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="39" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageArticleParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/PageArticleParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="31" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageArticleParserImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="969">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#811#827#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyInterpreter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/CompanyInterpreter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="26" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,82 +131,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageArticleParserImplTester.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TechCrunchDocInterpreterImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/TechCrunchDocInterpreterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="0" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Element.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar!/org/jsoup/nodes/Element.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="37" selection-start="6423" selection-end="6423" vertical-scroll-proportion="-5.16" vertical-offset="2064" max-vertical-offset="3264">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selector.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar!/org/jsoup/select/Selector.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="44" selection-start="419" selection-end="419" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageArticleParserImplTester.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/PageArticleParserImplTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="97" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyInterpreter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/CompanyInterpreter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="1004" selection-end="1004" vertical-scroll-proportion="1.4029126" vertical-offset="0" max-vertical-offset="1360">
+            <state line="51" column="93" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.7861635" vertical-offset="78" max-vertical-offset="731">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1074#1082#0" expanded="true" />
+                <element signature="e#1794#1802#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IgnoredWords.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/IgnoredWords.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="37" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IgnoredWordsProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/crunch/module/IgnoredWordsProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/crunch/model/CompanyTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="50" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/crunch/model/ArticleTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageScannerImplTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/PageScannerImplTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="748">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyArticleTester.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/crunch/model/CompanyArticleTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -182,11 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/crunch/model/ArticleTester.java" />
-        <option value="$PROJECT_DIR$/src/test/java/crunch/model/CompanyTester.java" />
-        <option value="$PROJECT_DIR$/src/test/java/crunch/model/ComanyArticleTester.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/crunch/module/ArticleScannerModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/crunch/service/ArticleScanner.java" />
         <option value="$PROJECT_DIR$/src/test/java/crunch/service/PageParserTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/crunch/service/ArticlePageScanner.java" />
@@ -229,10 +222,15 @@
         <option value="$PROJECT_DIR$/src/main/java/crunch/interpreter/CompanyInterpreter.java" />
         <option value="$PROJECT_DIR$/src/main/java/crunch/model/IgnoredWords.java" />
         <option value="$PROJECT_DIR$/src/test/java/crunch/service/impl/CompanyInterpreterTester.java" />
-        <option value="$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/crunch/service/impl/PageArticleParserImplTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/crunch/module/IgnoredWordsProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/service/DocInterpreter.java" />
         <option value="$PROJECT_DIR$/src/main/java/crunch/service/impl/CompanyInterpreter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/model/InterpretationMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/service/ArticleInterpreter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/service/CompanyInterpreter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crunch/service/impl/TechCrunchDocInterpreterImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/crunch/service/impl/PageArticleParserImplTester.java" />
       </list>
     </option>
   </component>
@@ -244,9 +242,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1983" />
-    <option name="y" value="-516" />
-    <option name="width" value="1273" />
+    <option name="x" value="1822" />
+    <option name="y" value="-582" />
+    <option name="width" value="1455" />
     <option name="height" value="928" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -308,6 +306,126 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -327,6 +445,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="crunch.service.impl" />
       <recent name="crunch.service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -335,58 +454,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in crunch">
-    <configuration default="false" name="CsvGeneratorTester.junk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crunch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="crunch.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="crunch.service.impl.CsvGeneratorTester" />
-      <option name="METHOD_NAME" value="junk" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyInterpreterTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crunch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="crunch.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="crunch.service.impl.CompanyInterpreterTester" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
     <configuration default="false" name="CompanyInterpreterTester.testCapitalized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crunch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -465,6 +532,58 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PageArticleParserImplTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crunch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crunch.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="crunch.service.impl.PageArticleParserImplTester" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PageArticleParserImplTester.testSample1Parse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crunch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crunch.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="crunch.service.impl.PageArticleParserImplTester" />
+      <option name="METHOD_NAME" value="testSample1Parse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -618,19 +737,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.ArticleScan" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CsvGeneratorTester.junk" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester.testCapitalized" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in crunch" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.crunch in crunch" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester.testCapitalized" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in crunch" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.crunch in crunch" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PageArticleParserImplTester" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PageArticleParserImplTester.testSample1Parse" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in crunch" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.crunch in crunch" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester.testCapitalized" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CsvGeneratorTester.junk" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PageArticleParserImplTester.testSample1Parse" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PageArticleParserImplTester" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.crunch in crunch" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyInterpreterTester.testCapitalized" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -665,7 +784,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1983" y="-516" width="1273" height="928" extended-state="0" />
+    <frame x="1822" y="-582" width="1455" height="928" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -675,17 +794,17 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3995128" sideWeight="0.71121716" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3995128" sideWeight="0.2887828" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808769" sideWeight="0.71021545" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808769" sideWeight="0.28908965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.49960223" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.4995656" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29117444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995128" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33982947" sideWeight="0.49960223" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -714,53 +833,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/PageScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/RejectedExecutionHandlerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageScannerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="36" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/PageArticleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1666">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#997#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/PageScannerImplTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="748">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crunch/exec/ArticleScan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="20" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="799">
@@ -809,13 +881,6 @@
     <entry file="jar://C:/opt/java/jdk1.7.0_51/src.zip!/java/io/ByteArrayOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="31" selection-start="7279" selection-end="7279" vertical-scroll-proportion="2.5246637" vertical-offset="2359" max-vertical-offset="4335" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/opt/java/jdk1.7.0_51/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="38" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.2174888" vertical-offset="1467" max-vertical-offset="6256">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://C:/opt/java/jdk1.7.0_51/src.zip!/java/util/concurrent/ExecutorService.java">
@@ -876,22 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="62" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="952">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/KnownCompaniesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="33" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="833">
@@ -902,33 +951,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageScannerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="67" selection-start="535" selection-end="535" vertical-scroll-proportion="0.38116592" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/PageArticleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15246637" vertical-offset="0" max-vertical-offset="446">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/CompanyArticle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="17" selection-start="326" selection-end="326" vertical-scroll-proportion="0.38116592" vertical-offset="0" max-vertical-offset="446">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="34" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="935">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,14 +989,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/crunch/model/CompanyArticleTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/SampleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="72" selection-start="9257" selection-end="9264" vertical-scroll-proportion="0.32794458" vertical-offset="1014" max-vertical-offset="1496">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -980,13 +1001,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/module/ArticleScanModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="72" selection-start="880" selection-end="880" vertical-scroll-proportion="0.4573991" vertical-offset="0" max-vertical-offset="446">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,23 +1018,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar!/org/jsoup/nodes/Element.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3264">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/internal/creation/MethodInterceptorFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="28" selection-start="805" selection-end="805" vertical-scroll-proportion="0.375" vertical-offset="85" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Interpretation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="103" selection-end="103" vertical-scroll-proportion="0.19058296" vertical-offset="0" max-vertical-offset="446">
           <folding />
         </state>
       </provider>
@@ -1029,25 +1029,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="13" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="748">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3634" selection-end="3634" vertical-scroll-proportion="0.0" vertical-offset="965" max-vertical-offset="1751">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#997#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/PageArticleParserImplTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="97" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="918">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1047,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="60" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1073,7 +1056,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="816">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1085,11 +1068,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/CompanyInterpreter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="1004" selection-end="1004" vertical-scroll-proportion="1.4029126" vertical-offset="0" max-vertical-offset="1360">
+        <state line="33" column="34" selection-start="830" selection-end="830" vertical-scroll-proportion="1.16" vertical-offset="0" max-vertical-offset="952">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/module/ArticleScanModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="72" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Interpretation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="103" selection-end="103" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="690" selection-end="690" vertical-scroll-proportion="0.92" vertical-offset="0" max-vertical-offset="935">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageScannerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="39" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/CompanyInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="275" selection-end="275" vertical-scroll-proportion="0.4538835" vertical-offset="0" max-vertical-offset="1360">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/DocInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="42" selection-end="42" vertical-scroll-proportion="0.07359307" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="27" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.0" vertical-offset="659" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/ArticleInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="85" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/model/InterpretationMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.24757281" vertical-offset="0" max-vertical-offset="748">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/PageArticleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar!/org/jsoup/nodes/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="37" selection-start="6423" selection-end="6423" vertical-scroll-proportion="-5.16" vertical-offset="2064" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/SampleData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/PageArticleParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="969">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#811#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/opt/java/jdk1.7.0_51/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="12" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.4809384" vertical-offset="1451" max-vertical-offset="6256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.3/jsoup-1.7.3.jar!/org/jsoup/select/Selector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="419" selection-end="419" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/CompanyInterpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crunch/service/impl/TechCrunchDocInterpreterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0" vertical-offset="849" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/crunch/service/impl/PageArticleParserImplTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="93" selection-start="2161" selection-end="2161" vertical-scroll-proportion="0.7861635" vertical-offset="78" max-vertical-offset="731">
+          <folding>
+            <element signature="e#1074#1082#0" expanded="true" />
+            <element signature="e#1794#1802#0" expanded="true" />
           </folding>
         </state>
       </provider>
