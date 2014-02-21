@@ -34,7 +34,7 @@ public class PageRunner {
         for (int i=0; i<maxPoolSize; i++){
             executorPool.execute(new WorkerThread(pageScanner, pageManager, System.out));
         }
-        Thread.sleep(8000);
+        Thread.sleep(1000);
         //shut down the pool
         executorPool.shutdown();
     }

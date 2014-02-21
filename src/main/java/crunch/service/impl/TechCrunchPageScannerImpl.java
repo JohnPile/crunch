@@ -7,16 +7,17 @@ import crunch.service.PageScanner;
 import org.jsoup.nodes.Document;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import java.io.IOException;
 import java.util.Set;
 
-public class PageScannerImpl implements PageScanner {
+public class TechCrunchPageScannerImpl implements PageScanner {
 
     private final JSoupConnection jSoupConnection;
     private final PageArticleParser pageArticleParser;
 
     @Inject
-    public PageScannerImpl(JSoupConnection jSoupConnection, PageArticleParser pageArticleParser) {
+    public TechCrunchPageScannerImpl(JSoupConnection jSoupConnection, @Named("TechCrunch") PageArticleParser pageArticleParser) {
         this.jSoupConnection = jSoupConnection;
         this.pageArticleParser = pageArticleParser;
     }

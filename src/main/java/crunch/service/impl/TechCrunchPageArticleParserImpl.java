@@ -10,17 +10,18 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
 
-public class PageArticleParserImpl implements PageArticleParser {
+public class TechCrunchPageArticleParserImpl implements PageArticleParser {
 
     private final DocInterpreter docInterpreter;
 
     @Inject
-    public PageArticleParserImpl(DocInterpreter docInterpreter) {
+    public TechCrunchPageArticleParserImpl(@Named("TechCrunch") DocInterpreter docInterpreter) {
         this.docInterpreter = docInterpreter;
     }
 

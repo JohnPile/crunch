@@ -28,7 +28,7 @@ public class PageScannerImplTester {
         PageArticleParser pageArticleParser = mock(PageArticleParser.class);
 
         // Exercise pageScanner.scanArticles
-        PageScanner pageScanner = new PageScannerImpl(jSoupConnection, pageArticleParser);
+        PageScanner pageScanner = new TechCrunchPageScannerImpl(jSoupConnection, pageArticleParser);
         when(jSoupConnection.newConnection(FAKESITE)).thenReturn(conn);
         when(conn.get()).thenReturn(doc);
         when(pageArticleParser.parseArticles(doc)).thenReturn(scannedArticlesFake);

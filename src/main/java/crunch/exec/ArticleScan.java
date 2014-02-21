@@ -16,15 +16,11 @@ public class ArticleScan {
         this.pageScanner = pageScanner;
     }
 
-    /**
-     * Scan website
-     * @param args { "URL of site to scan" }
-     */
     public static void main(String[] args) {
         Injector injector = Guice.createInjector(new ArticleScanModule());
         ArticleScan articleScan=injector.getInstance(ArticleScan.class);
         PageRunner pr=new PageRunner(articleScan.pageScanner);
-        int pages=20;
+        int pages=2000;
         if (args.length==1) {
             if (args[0].matches("^[0-9]+$")) {
                 pages=Integer.parseInt(args[0]);
