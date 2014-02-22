@@ -5,29 +5,32 @@ import java.util.Map;
 
 public class InterpretationMap {
 
-    Map<String,Interpretation> interpretationMap;
+    Map<String, Interpretation> interpretationMap;
 
     public InterpretationMap() {
-        this.interpretationMap=new HashMap<String,Interpretation>();
+        this.interpretationMap = new HashMap<String, Interpretation>();
     }
 
     public void addInterpretation(Interpretation interpretation) {
-        String lc=interpretation.getName().toLowerCase();
+        String lc = interpretation.getName().toLowerCase();
         if (interpretationMap.containsKey(lc)) {
-            Interpretation existing=interpretationMap.get(lc);
-            interpretation=new Interpretation(interpretation.getName(), interpretation.getConfidence()+existing.getConfidence());
+            Interpretation existing = interpretationMap.get(lc);
+            interpretation = new Interpretation(interpretation.getName(), interpretation.getConfidence() + existing.getConfidence());
         }
         interpretationMap.put(lc, interpretation);
     }
 
     public Interpretation topInterpretation() {
-        int max=0;
-        Interpretation topInterpretation=null;
+        int max = 0;
+        Interpretation topInterpretation = null;
         for (Interpretation interpretation : interpretationMap.values()) {
-            if (interpretation.getConfidence()>max) {
-                topInterpretation=interpretation;
-                max=interpretation.getConfidence();
+            if (interpretation.getConfidence() > max) {
+                topInterpretation = interpretation;
+                max = interpretation.getConfidence();
             }
+        }
+        if (topInterpretation==null) {
+            return new Interpretation(null, 0);
         }
         return topInterpretation;
     }

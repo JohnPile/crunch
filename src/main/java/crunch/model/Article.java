@@ -12,14 +12,15 @@ public class Article implements Comparable<Article> {
 
     /**
      * Article metadata
+     *
      * @param title <em>Required</em> Title of an article
-     * @param url <em>Required</em> URL where article was found
+     * @param url   <em>Required</em> URL where article was found
      */
     public Article(String title, URL url) {
         Preconditions.checkNotNull(title, "Title is required.");
         Preconditions.checkNotNull(url, "URL is required.");
-        this.title=title;
-        this.url=url;
+        this.title = title;
+        this.url = url;
     }
 
     public String getTitle() {
@@ -30,16 +31,16 @@ public class Article implements Comparable<Article> {
         return url;
     }
 
-    public int compareTo(@NotNull Article that) {
-        int primary=title.compareTo(that.title);
-        return primary==0 ? url.toString().compareTo(that.url.toString()) : primary;
+    public int compareTo(Article that) {
+        int primary = title.compareTo(that.title);
+        return primary == 0 ? url.toString().compareTo(that.url.toString()) : primary;
     }
 
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Article) {
-            Article that=(Article) obj;
-            return this.compareTo(that)==0;
+            Article that = (Article) obj;
+            return this.compareTo(that) == 0;
         }
         return false;
     }

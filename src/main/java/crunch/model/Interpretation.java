@@ -17,4 +17,8 @@ public class Interpretation {
     public int getConfidence() {
         return confidence;
     }
+
+    public static Interpretation noneFound() {
+        return new Interpretation(null, 0);
+    }
 }

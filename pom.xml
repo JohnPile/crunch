@@ -29,7 +29,11 @@
             <artifactId>guice</artifactId>
             <version>3.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.factual</groupId>
+            <artifactId>factual-java-driver</artifactId>
+            <version>1.8.5</version>
+        </dependency>
         <!-- Test Dependencies -->
         <dependency>
             <groupId>junit</groupId>

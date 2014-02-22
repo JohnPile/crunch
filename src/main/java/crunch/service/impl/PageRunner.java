@@ -9,29 +9,30 @@ import java.util.concurrent.*;
 
 public class PageRunner {
 
-    private static final Object printLock=new Object();
+    private static final Object printLock = new Object();
     private final PageScanner pageScanner;
 
     public PageRunner(PageScanner pageScanner) {
-        this.pageScanner=pageScanner;
+        this.pageScanner = pageScanner;
     }
 
     /**
      * Scan a fixed number of pages from the site using a pool of workers
+     *
      * @param pages Number of pages to process before quitting
      * @throws InterruptedException
      */
     public void runPool(int pages) throws InterruptedException {
         RejectedExecutionHandlerImpl rejectionHandler = new RejectedExecutionHandlerImpl();
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        int corePoolSize=10;
-        int maxPoolSize=20;
-        long keepAlive=10;
-        PageManager pageManager=new PageManager(1,pages);
+        int corePoolSize = 10;
+        int maxPoolSize = 20;
+        long keepAlive = 10;
+        PageManager pageManager = new PageManager(1, pages);
         ThreadPoolExecutor executorPool = new ThreadPoolExecutor(corePoolSize, maxPoolSize, keepAlive, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(corePoolSize), threadFactory, rejectionHandler);
         // Each thread processes one web page at a time
 
-        for (int i=0; i<maxPoolSize; i++){
+        for (int i = 0; i < maxPoolSize; i++) {
             executorPool.execute(new WorkerThread(pageScanner, pageManager, System.out));
         }
         Thread.sleep(1000);
@@ -47,12 +48,12 @@ public class PageRunner {
         private final int lastPage;
 
         public PageManager(int firstPage, int lastPage) {
-            currentPage=firstPage;
-            this.lastPage=lastPage;
+            currentPage = firstPage;
+            this.lastPage = lastPage;
         }
 
         synchronized int next() throws InterruptedException {
-            if (currentPage>=lastPage) {
+            if (currentPage >= lastPage) {
                 throw new InterruptedException("Done");
             }
             return currentPage++;
@@ -69,21 +70,21 @@ public class PageRunner {
         private final PrintStream out;
 
 
-        public WorkerThread(PageScanner pageScanner, PageManager pageManager, PrintStream out){
-            this.out=out;
-            this.pageManager=pageManager;
-            this.pageScanner=pageScanner;
+        public WorkerThread(PageScanner pageScanner, PageManager pageManager, PrintStream out) {
+            this.out = out;
+            this.pageManager = pageManager;
+            this.pageScanner = pageScanner;
         }
 
         @Override
         public void run() {
             try {
                 while (true) {
-                    int pageno=pageManager.next();
-                    String site="http://techcrunch.com/page/" + pageno;
-                    Set<CompanyArticle> companyArticles=pageScanner.scanArticles(site);
+                    int pageno = pageManager.next();
+                    String site = "http://techcrunch.com/page/" + pageno;
+                    Set<CompanyArticle> companyArticles = pageScanner.scanArticles(site);
 
-                    synchronized(PageRunner.printLock) {
+                    synchronized (PageRunner.printLock) {
                         CsvGenerator.toCsv(companyArticles, out);
                     }
 

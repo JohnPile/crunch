@@ -7,23 +7,29 @@ import crunch.module.ArticleScanModule;
 import crunch.service.PageScanner;
 import crunch.service.impl.PageRunner;
 
+import javax.inject.Named;
+import java.util.HashMap;
+import java.util.Map;
+
 public class ArticleScan {
 
-    private final PageScanner pageScanner;
+    private final Map<String, PageScanner> pageScanners;
 
     @Inject
-    private ArticleScan(PageScanner pageScanner) {
-        this.pageScanner = pageScanner;
+    private ArticleScan(@Named("TechCrunch") PageScanner techCrunchPageScanner) {
+        pageScanners = new HashMap<String, PageScanner>();
+        pageScanners.put("TechCrunch", techCrunchPageScanner);
     }
 
     public static void main(String[] args) {
         Injector injector = Guice.createInjector(new ArticleScanModule());
-        ArticleScan articleScan=injector.getInstance(ArticleScan.class);
-        PageRunner pr=new PageRunner(articleScan.pageScanner);
-        int pages=2000;
-        if (args.length==1) {
+        ArticleScan articleScan = injector.getInstance(ArticleScan.class);
+        // Will implement a selection process when we grow past one site
+        PageRunner pr = new PageRunner(articleScan.pageScanners.get("TechCrunch"));
+        int pages = 2000;
+        if (args.length == 1) {
             if (args[0].matches("^[0-9]+$")) {
-                pages=Integer.parseInt(args[0]);
+                pages = Integer.parseInt(args[0]);
             }
         }
         try {

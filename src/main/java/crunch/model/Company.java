@@ -9,7 +9,8 @@ public class Company implements Comparable<Company> {
 
     /**
      * Company metadata
-     * @param name Name of company
+     *
+     * @param name    Name of company
      * @param website Company's main website
      */
     public Company(String name, String website) {
@@ -25,9 +26,9 @@ public class Company implements Comparable<Company> {
         return website;
     }
 
-    public int compareTo(@NotNull Company that) {
-        int primary=name.compareTo(that.name);
-        return primary==0 ? website.compareTo(that.website) : primary;
+    public int compareTo(Company that) {
+        int primary = name.compareTo(that.name);
+        return primary == 0 ? website.compareTo(that.website) : primary;
     }
 
     private String normalizeWebsite(String site) {
@@ -37,8 +38,8 @@ public class Company implements Comparable<Company> {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Company) {
-            Company that=(Company) obj;
-            return this.compareTo(that)==0;
+            Company that = (Company) obj;
+            return this.compareTo(that) == 0;
         }
         return false;
     }

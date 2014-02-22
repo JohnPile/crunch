@@ -11,9 +11,9 @@ public class ArticleTester {
 
     @Test
     public void testConstructorGoodData() throws Exception {
-        String title="title";
-        URL url=new URL("http://www.example.com");
-        Article article=new Article(title, url);
+        String title = "title";
+        URL url = new URL("http://www.example.com");
+        Article article = new Article(title, url);
         assertEquals(title, article.getTitle());
         assertEquals(url, article.getUrl());
     }

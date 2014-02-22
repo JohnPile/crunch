@@ -9,8 +9,8 @@ import java.util.Map;
 
 public class KnownCompaniesImpl implements KnownCompanies {
 
-    private static final Company UNRECOGNIZED_COMPANY=new Company(null, null);
-    private final Map<String,Company> companyCache=new HashMap<String,Company>();
+    private static final Company UNRECOGNIZED_COMPANY = new Company(null, null);
+    private final Map<String, Company> companyCache = new HashMap<String, Company>();
 
     public KnownCompaniesImpl() {
         //TODO: Wire up to some persistent storage
@@ -19,7 +19,7 @@ public class KnownCompaniesImpl implements KnownCompanies {
 
     @Override
     public Company lookup(String candidateName) {
-        Company recognized=companyCache.get(normalizeName(candidateName));
+        Company recognized = companyCache.get(normalizeName(candidateName));
         return Objects.firstNonNull(recognized, UNRECOGNIZED_COMPANY);
     }
 

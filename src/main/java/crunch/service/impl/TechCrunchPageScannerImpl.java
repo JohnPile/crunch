@@ -25,7 +25,7 @@ public class TechCrunchPageScannerImpl implements PageScanner {
     public Set<CompanyArticle> scanArticles(String site) {
         Document doc;
         try {
-            doc= jSoupConnection.newConnection(site).get();
+            doc = jSoupConnection.newConnection(site).get();
             return scanArticles(doc);
         } catch (IOException e) {
             throw new IllegalArgumentException("Invalid site");

@@ -1,9 +1,12 @@
 package crunch.service.impl;
 
+import com.factual.driver.Factual;
 import crunch.model.CompanyArticle;
 import crunch.model.IgnoredWords;
+import crunch.module.FactualProvider;
 import crunch.module.IgnoredWordsProvider;
 import crunch.service.DocInterpreter;
+import crunch.service.JSoupConnection;
 import crunch.service.PageArticleParser;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -19,12 +22,14 @@ public class PageArticleParserImplTester {
 
     @Test
     public void testSample1Parse() {
-        IgnoredWords ignoredWords=new IgnoredWordsProvider().get();
-        DocInterpreter docInterpreter=new TechCrunchDocInterpreterImpl(ignoredWords);
-        PageArticleParser pageArticleParser=new TechCrunchPageArticleParserImpl(docInterpreter);
+        IgnoredWords ignoredWords = new IgnoredWordsProvider().get();
+        Factual factual = new FactualProvider().get();
+        DocInterpreter docInterpreter = new TechCrunchDocInterpreterImpl(ignoredWords, factual);
+        JSoupConnection jsoupConn=new JSoupConnectionImpl();
+        PageArticleParser pageArticleParser = new TechCrunchPageArticleParserImpl(docInterpreter, jsoupConn);
         Document doc = Jsoup.parse(SampleData.QUICK_SAMPLE);
-        Set<CompanyArticle> companyArticles=pageArticleParser.parseArticles(doc);
-        Set<String> companyNames=new HashSet<String>();
+        Set<CompanyArticle> companyArticles = pageArticleParser.parseArticles(doc);
+        Set<String> companyNames = new HashSet<String>();
         for (CompanyArticle ca : companyArticles) {
             companyNames.add(ca.getCompany().getName());
         }
@@ -34,12 +39,14 @@ public class PageArticleParserImplTester {
 
     @Test
     public void testSample2Parse() {
-        IgnoredWords ignoredWords=new IgnoredWordsProvider().get();
-        DocInterpreter interpreter=new TechCrunchDocInterpreterImpl(ignoredWords);
-        PageArticleParser pageArticleParser=new TechCrunchPageArticleParserImpl(interpreter);
+        IgnoredWords ignoredWords = new IgnoredWordsProvider().get();
+        Factual factual = new FactualProvider().get();
+        JSoupConnection jsoupConn=new JSoupConnectionImpl();
+        DocInterpreter interpreter = new TechCrunchDocInterpreterImpl(ignoredWords, factual);
+        PageArticleParser pageArticleParser = new TechCrunchPageArticleParserImpl(interpreter, jsoupConn);
         Document doc = Jsoup.parse(SampleData.THICK_SAMPLE);
-        Set<CompanyArticle> companyArticles=pageArticleParser.parseArticles(doc);
-        Set<String> companyNames=new HashSet<String>();
+        Set<CompanyArticle> companyArticles = pageArticleParser.parseArticles(doc);
+        Set<String> companyNames = new HashSet<String>();
         for (CompanyArticle ca : companyArticles) {
             companyNames.add(ca.getCompany().getName());
         }

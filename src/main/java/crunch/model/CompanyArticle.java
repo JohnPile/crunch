@@ -9,8 +9,8 @@ public class CompanyArticle {
     public CompanyArticle(Company company, Article article) {
         Preconditions.checkNotNull(company, "Company is a required field.");
         Preconditions.checkNotNull(article, "Article is a required field.");
-        this.company=company;
-        this.article=article;
+        this.company = company;
+        this.article = article;
     }
 
     public Article getArticle() {

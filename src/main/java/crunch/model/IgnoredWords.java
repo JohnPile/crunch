@@ -1,5 +1,6 @@
 package crunch.model;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,7 +8,7 @@ public class IgnoredWords {
     private Set<String> ignoredWords;
 
     public IgnoredWords(String... words) {
-        ignoredWords=new HashSet<String>();
+        ignoredWords = new HashSet<String>();
         add(words);
     }
 
@@ -16,9 +17,7 @@ public class IgnoredWords {
     }
 
     public void add(String[] words) {
-        for (String word : words) {
-            ignoredWords.add(word);
-        }
+        Collections.addAll(ignoredWords, words);
     }
 
     public boolean contains(String word) {

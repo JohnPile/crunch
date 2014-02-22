@@ -2,7 +2,7 @@ package crunch.service.impl;
 
 public class SampleData {
 
-    public static final String QUICK_SAMPLE="<html><body>...<li class=\"river-block\" id=\"960369\" data-permalink=\"http://techcrunch.com/2014/02/19/facebook-falls-5-in-after-hours-trading-after-announcing-16b-cash-and-stock-to-buy-chat-app-whatsapp/\" data-shareTitle=\"Facebook Stock Falls 5% In After Hours Trading Following WhatsApp Purchase&nbsp;Announcement\">\n" +
+    public static final String QUICK_SAMPLE = "<html><body>...<li class=\"river-block\" id=\"960369\" data-permalink=\"http://techcrunch.com/2014/02/19/facebook-falls-5-in-after-hours-trading-after-announcing-16b-cash-and-stock-to-buy-chat-app-whatsapp/\" data-shareTitle=\"Facebook Stock Falls 5% In After Hours Trading Following WhatsApp Purchase&nbsp;Announcement\">\n" +
             "<div class=\"block block-thumb\">\n" +
             " <div class=\"tags\" data-omni-sm-delegate=\"gbl_river_category\">\n" +
             " <a href=\"http://techcrunch.com/finance-2/\" title=\"Finance\" class=\"tag\"><span>Finance</span></a>\n" +
@@ -20,7 +20,7 @@ public class SampleData {
             "<li><a href=\"http://techcrunch.com/2014/02/19/facebook-falls-5-in-after-hours-trading-after-announcing-16b-cash-and-stock-to-buy-chat-app-whatsapp/#comments\" rel=\"external\" class=\"icon-comment\"><span class=\"social-count\"><fb:comments-count href=\"http://techcrunch.com/2014/02/19/facebook-falls-5-in-after-hours-trading-after-announcing-16b-cash-and-stock-to-buy-chat-app-whatsapp/\"></fb:comments-count></span></a></li>" +
             "</body></html>";
 
-    public static final String THICK_SAMPLE="\n" +
+    public static final String THICK_SAMPLE = "\n" +
             "<li><a href=\"#\" rel=\"external\" class=\"icon-facebook\"><span class=\"social-count\" id=\"fb-newshare-960369\"></span></a></li>\n" +
             "<li><a href=\"#\" rel=\"external\" class=\"icon-twitter\"><span class=\"social-count\" id=\"tweet-newshare-960369\"></span></a></li>\n" +
             "<li><a href=\"#\" rel=\"external\" class=\"icon-linkedin\"><span class=\"social-count\" id=\"linkedin-newshare-960369\"></span></a></li>\n" +
